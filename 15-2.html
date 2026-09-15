@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            padding: 30px;
+        }
+
+
+        .vo {
+            display: grid;
+
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 24px;
+
+        }
+
+
+        .video-card {
+            display: flex;
+            flex-direction: column;
+        }
+
+
+        .video-card video {
+            width: 100%;
+
+            aspect-ratio: 16 / 9;
+            object-fit: cover;
+            border-radius: 8px;
+
+        }
+
+
+        .title {
+            margin-top: 10px;
+            font-size: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="vo">
+        <div class="video-card">
+            <video
+                src="c:\Users\王思雨\Documents\xwechat_files\wxid_6xt30sknxffn22_90d2\temp\RWTemp\2026-09\9e20f478899dc29eb19741386f9343c8\8c608bd75ee66befa91ecf35a136a767.mp4"
+                controls="controls"></video>
+            <p class="title">苏州站</p>
+        </div>
+        <div class="video-card">
+            <video
+                src="c:\Users\王思雨\Documents\xwechat_files\wxid_6xt30sknxffn22_90d2\temp\RWTemp\2026-09\9e20f478899dc29eb19741386f9343c8\bc0c809a013502e26cac558b9e33ba9e.mp4"
+                controls="controls"></video>
+            <p class="title">拙政园</p>
+        </div>
+        <div class="video-card">
+            <video
+                src="c:\Users\王思雨\Documents\xwechat_files\wxid_6xt30sknxffn22_90d2\temp\RWTemp\2026-09\9e20f478899dc29eb19741386f9343c8\66072920114a60fa797f8eebb12a35f6.mp4"
+                controls="controls"></video>
+            <p class="title">杭州西湖</p>
+        </div>
+        <div class="video-card">
+            <video
+                src="c:\Users\王思雨\Documents\xwechat_files\wxid_6xt30sknxffn22_90d2\temp\RWTemp\2026-09\9e20f478899dc29eb19741386f9343c8\15891f7511804050a002b93298661e24.mp4"
+                controls="controls"></video>
+            <p class="title">上海外滩</p>
+        </div>
+
+
+    </div>
+</body>
+
+</html>
